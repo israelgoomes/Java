@@ -1,14 +1,14 @@
 package com.crud.domain;
 
 public class TbFornecedores {
-		private Long codigo;
+		private int codigo;
 		private String descricao;
 		
 		
-		public Long getCodigo() {
+		public int getCodigo() {
 			return codigo;
 		}
-		public void setCodigo(long codigo) {
+		public void setCodigo(int codigo) {
 			this.codigo = codigo;
 		}
 		public String getDescricao() {
@@ -18,5 +18,10 @@ public class TbFornecedores {
 			this.descricao = descricao;
 		} 
 		
-		
+		@Override
+		public String toString() {
+			String saida = codigo + " - " + descricao;
+		// TODO Auto-generated method stub
+		return saida;
+		}
 }
